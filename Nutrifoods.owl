@@ -1,0 +1,2614 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.nutrifoods.com/"
+     xml:base="http://www.nutrifoods.com/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.nutrifoods.com/#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Nifoods="http://www.Nutrifoods.com/ontology#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.nutrifoods.com/">
+        <rdfs:comment xml:lang="en">nutrition ontology is a website for given consumers more informaion about their food</rdfs:comment>
+        <rdfs:label xml:lang="en">Author name: JOSEPH KINGSLEY</rdfs:label>
+        <rdfs:label>Name of ONTOLOGY: Nutrifoods</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">FoodON ontology, https://www.myfooddata.com/</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#foodhas_nutrients -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#foodhas_nutrients">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:comment xml:lang="en">This connects food with the major nutrients they have</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_carbs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_carbs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_cholesterol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_cholesterol">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_fats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_fats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Fats"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_fiber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_fiber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_minerals -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_minerals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_protein -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_protein">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#proteins"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_sugar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_sugar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_vitamins -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_vitamins">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_water -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_water">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.nutrifoods.com/#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.nutrifoods.com/#description">
+        <rdfs:comment>this explains what something is</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#amountofcholesterol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#amountofcholesterol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>this shows if the food has cholesterol and what number it has</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#energy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#energy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This shows the amount of kj or kcal calories that are in the food. this will be per quantity of the food product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramoffat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramoffat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Fats"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">This shows the amount of fat in a food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramoffiber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramoffiber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">This shows the amount of fiber in a food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramofprotein -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramofprotein">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#proteins"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">This shows the amount  of protein in a food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramofsugar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramofsugar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>This is amount of sugar in food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramofwater -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramofwater">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">This shows the amount of water in a food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramsofcarbs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#gramsofcarbs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">this shows the amount of carbohydrate in a food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This gives the name of the food</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#numberofminerals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#numberofminerals">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This shows the amount of minerals in a food and what mineral it is</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#numberofvitamin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#numberofvitamin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This shows the amount of vitamin in a food and the types of vitamin it has</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#weight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This shows the weight in gramms of a food that will be measured</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Beans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Beans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Meat_and_poultry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Fats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Fats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdfs:isDefinedBy xml:lang="en">This are those we need more than 100mg of a day</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Meat_and_poultry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Meat_and_poultry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdfs:isDefinedBy xml:lang="en">This are minerals that we need less than 100mg of a day</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Vitamin_D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Vitamin_D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble"/>
+        <rdfs:seeAlso xml:lang="en">Also known as calciferol, 1, 25-dihydroxy vitamin D</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#allium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#allium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#chromium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#chromium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cruciferous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cruciferous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#edible_plant_stem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#edible_plant_stem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A Food is something that can be eaten.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iodine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iodine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#leafy_green -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#leafy_green">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#manganese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#manganese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#marrow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#marrow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#micro_nutrients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#micro_nutrients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#micro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#proteins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#proteins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#roots -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#roots">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#micro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.nutrifoods.com/Black_turtle_beans -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/Black_turtle_beans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Beans"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:name>Black turtle beans</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/black_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/black_chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:energy>170 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.8</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:name>Black chocolate</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofvitamin>vitamin E 0.2mg
+vitamin K 2.1μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>28g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/cucumber -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/cucumber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#marrow"/>
+        <untitled-ontology-10:name>Cucumber</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/garlic -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/garlic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#allium"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:name>Garlic</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/lettuce -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/lettuce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#leafy_green"/>
+        <untitled-ontology-10:name>Lettuce</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/onion -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/onion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#allium"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:gramofsugar>6.8g</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.9</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Onion</untitled-ontology-10:name>
+        <untitled-ontology-10:weight>160g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/pumpkin -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/pumpkin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#marrow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:energy>30 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">106.3</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Pumpkin</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>magnesium 13.9mg
+zinc 0.4mg
+potassium 394.4mg
+iron 0.9mg
+calcium 24.4mg
+phosphorus 51mg
+copper 0.1mg
+selenium 0.3μg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 494.2μg
+vitamin C 10.4mg
+vitamin E 1.2mg
+vitamin K 1.3μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>116g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/spinach -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/spinach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#leafy_green"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:energy>7 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27.4</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Spinach</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 29.7mg
+iron 0.8mg
+potasssium 167.4mg
+salt 23.7mg
+magnesium 23.7mg
+zinc 0.2mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 140.7μg
+vitamin C 8.4mg
+vitamin E 0.6mg
+vitamin K 144.9μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>30g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/#cholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/#cholesterol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <www:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholesterol is a waxy, fat-like substance produced primarily by the liver in both humans and animals. It is found in all cells of the body. Cholesterol in food is referred to as “dietary cholesterol” and is found only in animal products. The human body makes more cholesterol than it needs — so it is not necessary to get cholesterol from food.</www:description>
+        <untitled-ontology-10:name>Cholesterol</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/#crab -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/#crab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#blue_crabs"/>
+        <untitled-ontology-10:name>Crab</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/#crayfish -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/#crayfish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:energy>70 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.3</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:name>Crayfish</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>iron
+selenium
+magnesium
+phosphorus
+sodium
+zinc</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A
+vitamin B12
+vitamin C
+vitamin E</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>85g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nutrifoods.com/#feta_cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.nutrifoods.com/#feta_cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:amountofcholesterol>25.3mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:name>Feta cheese</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium
+iron
+magnesium
+zinc
+potassium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>Feta cheese</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin A
+vitamin B12
+vitamin D</untitled-ontology-10:numberofvitamin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Raw_pacific_oyster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Raw_pacific_oyster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:amountofcholesterol>25mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>41 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Oyster</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>iron 2.6mg,
+sodium 11mg,
+magnesium 11mg,
+zinc 8.3mg,
+calcium 4mg.</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 40.5μg
+vitaminB12 8μg
+vitamin C 4mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>50g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#almonds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#almonds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy>164 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.2</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Almond</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium 76.4mg 
+ iron 1.1mg  
+potassium 208.2 mg  
+magnesium 76.7mg 
+zinc 0.9mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin E 7.3mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>28g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#crabapples"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#artichoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#artichoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#edible_plant_stem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.9</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108.7</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.5</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artichokes</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium 56.3mg 
+iron 1.6mg  
+potassium 473.6mg 
+sodium 120.3mg 
+magnesium 76.8mg 
+ zinc 0.6mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin A 1.3μg 
+vitamin C 15mg  
+vitamin E 0.2mg  
+vitamin K 18.9 μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">128g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#asparagus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#asparagus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#edible_plant_stem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:energy>27 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.8</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.9</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">134.0</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.2</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Asparagus</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 32.2mg 
+iron 2.9mg  
+potassium 270.7mg  
+magnesium 18.8mg  
+zinc 0.7mg 
+sodium 2.7mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 50.9μg 
+vitamin C 7.5mg 
+vitamin E 1.5mg 
+vitamin K 55.7μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>134g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#atlantic_herring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#atlantic_herring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_D"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy>661kj (158kcal)</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.04</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.96</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.0</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Atlantic herring</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 57mg 
+iron 1.10mg 
+magnesium 32mg 
+phosphorus 236mg 
+potassium 327mg 
+sodium 90mg 
+zinc 0.99mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin B2 0.2mg 
+vitamin B12 13.67μg 
+vitamin B9 10μg 
+vitamin D 167IU 
+vitamin B3 3.22mg 
+vitamin B5 0.65mg 
+vitamin B6 0.30mg 
+vitamin C 0.7mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>100g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#avocado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#avocado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:energy>322 calories 16%DV</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.5</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.5</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">201.0</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.1</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Avocado</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 24.1mg 
+iron 1.1mg 
+potassium 974.9mg 
+sodium 14.1mg 
+magnesium 58.3mg 
+zinc 1.3mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 14.1μg 
+vitamin C 20.1mg 
+vitamin E 4.2mg 
+vitamin K 42.2μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>201g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#banana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy>134 calories 7%DV</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.9</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.3</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">112.4</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.3</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Banana</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 7.5mg 
+iron 0.4mg 
+potassium 537mg 
+magnesium 40.5mg 
+zinc 0.2mg 
+sodium 1.5mg 
+copper 0.1mg 
+maganese 0.4mg 
+selenium 1.5μg 
+flouride 3.3μg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 4.5μg 
+vitamin C 13.1mg 
+vitamin E 0.2mg 
+vitamin K 0.8μg 
+vitamin B9 30μg
+vitamin B3 1mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>150g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#banana"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#has_carbs"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <rdfs:comment>it has carbohydrate in them</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#basil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#basil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:energy>94kj (22kcal)</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.64</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92.06</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.65</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Basil</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#black_beans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#black_beans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Beans"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:energy>227 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.2</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113.1</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.8</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Black beans</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium
+iron
+potassium
+magnesium
+zinc
+phosphorus
+selenium
+maganese
+copper
+sodium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin E
+vitamin K</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>172g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#blue_cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#blue_cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:amountofcholesterol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21.3mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:name>Blue cheese</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium
+potassium
+sodium
+magnesium
+zinc
+phosphorus
+selenium
+iron</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin A
+vitamin C
+vitamin B12</untitled-ontology-10:numberofvitamin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#blue_crabs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#blue_crabs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:amountofcholesterol>114.5mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>98 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.1</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Blue crab</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium
+iron
+potassium
+sodium
+magnesium
+zinc</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin B12
+vitamin C
+vitamin E</untitled-ontology-10:numberofvitamin>
+        <rdfs:comment>cooked in moist heat</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#brazil_nuts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#brazil_nuts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:energy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">187 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.1</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.1</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.0</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Brail nuts</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium
+iron
+potassium
+magnesium
+zinc
+copper</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin A
+vitamin C
+vitamin B12</untitled-ontology-10:numberofvitamin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#broccoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#broccoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cruciferous"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:energy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broccoli</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium
+selenium
+zinc
+sodium
+phosphorus
+potassium
+iron
+calcium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin C
+vitamin E
+vitamin K
+vitamin B2
+vitamin  B3</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>91g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#brown_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#brown_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.5</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51.7</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Brown rice</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron
+sodium
+magnesium
+zinc
+calcium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin B1
+vitamin B2
+vitamin B6
+vitamin E</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">202g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cabbage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cabbage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cruciferous"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:name>Cabbage</untitled-ontology-10:name>
+        <untitled-ontology-10:weight>22 calories</untitled-ontology-10:weight>
+        <untitled-ontology-10:weight>89g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrates"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbohydrate</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carrots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carrots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#roots"/>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63.6</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.9</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carrot</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium
+iron
+potassium
+sodium
+magnesium
+zinc</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A
+vitamin C
+vitamin E
+vitamin K</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>72g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cheddar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cheddar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:name>Cheddar cheese</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cheese</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#chromium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#chromium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#chromium"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromium</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cooked_catfish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cooked_catfish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:amountofcholesterol>103mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>150 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.1</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26.4</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:name>Catfish</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>sodium
+zinc
+magnesium
+potassium
+iron
+calcium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A
+vitamin B12
+vitamin C</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>143g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cooked_sockeye_salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cooked_sockeye_salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:name>Cooked Sockeye Salmon</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cooked_swordfish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#cooked_swordfish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:amountofcholesterol>66.3mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>146 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.7</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.9</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58.0</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Swordfish</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>iron
+potassium
+sodium
+magnesium
+zinc
+calcium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A
+vitamin B12
+vitamin D
+vitamin E</untitled-ontology-10:numberofvitamin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name>Copper</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#crabapples -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#crabapples">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:energy>84 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86.8</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.9</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Crabapples</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium
+iron
+potassium
+sodium
+magnesium</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin C</untitled-ontology-10:numberofvitamin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#emu_steak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#emu_steak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Meat_and_poultry"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:name>Emu steak</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Fats"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name>Fat</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name>Fiber</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:name>Fish</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name>Flouride</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fresh_thyme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fresh_thyme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:energy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Thyme</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron 0.1mg
+magnesium 1.3mg
+potassium 4.9mg
+calcium 3.2mg
+phosphorus 0.8mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin C</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grapefruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grapefruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:energy>74 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.1</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">230</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.6</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Grapefruit</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium
+iron
+potassium
+magnesium
+zinc</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofminerals>vitamin A
+vitamin C
+vitamin E</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:weight>230g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#haddock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#haddock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fish_and_seafood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:amountofcholesterol>45.9mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>63 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haddock</untitled-ontology-10:name>
+        <untitled-ontology-10:weight>85g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iodine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iodine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iodine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name>Iodine</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#micro_nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#kidney_beans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#kidney_beans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Beans"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:name>kidney beans</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macedamia_nuts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macedamia_nuts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nut_and_seeds"/>
+        <untitled-ontology-10:name>Macedamia nuts</untitled-ontology-10:name>
+        <untitled-ontology-10:weight>28g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnesium</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milk</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <untitled-ontology-10:name>MInerals</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrients</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#orange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:energy>85 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.8</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>Calcium 72mg
+iron 0.2mg
+magnesium 18mg
+zinc 0.1mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofminerals>vitamin C 95.8mg
+vitamin E 0.3mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:weight>0.2g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#ostrich_steak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#ostrich_steak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Meat_and_poultry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:amountofcholesterol>82.5mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>139 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56.6</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Ostrich steak</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>iron 4.3mg,
+Potassium 311.1mg,
+sodium 62.2mg,
+Magnesium 22.1mg,
+zinc 4.2mg,
+calcium 4.3mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin B12 5.5μg
+vitamin E 0.2mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>85g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#paprika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#paprika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:energy>19 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Paprika</untitled-ontology-10:name>
+        <untitled-ontology-10:weight>7g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#peach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#peach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:name>Peach</untitled-ontology-10:name>
+        <untitled-ontology-10:weight>154g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphorus</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#pineapple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#pineapple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:energy>83 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.3</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">141.9</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Pineapple</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofvitamin>vitmain A 5μg
+vitamin C 78.9mg
+vitamin K 1.2μg
+vitamin B3 0.8mg
+vitamin B9 29.7μg
+vitamin B1 0.1mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>165g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potatoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potatoes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#roots"/>
+        <untitled-ontology-10:energy>114 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.6</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102.8</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26.8</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweet Potatoes</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 39.3mg
+iron 0.8mg
+potassium 448.2mg
+sodium 73.2mg
+magnesium 33.3mg
+zinc 0.4mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 943μg
+vitamin K 2.4μg
+vitamin E 0.3mg
+vitamin C 3.2mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>133g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#macro_nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#proteins"/>
+        <untitled-ontology-10:name>Protein</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#rosemary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#rosemary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#spice_and_herbs"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy>1 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Rosemary</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 2.2mg
+potassium 4.7mg
+magnesium 0.6mg
+phosphorus 0.5mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 1μg
+vitamin C 0.2mg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>1g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salt</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selenium</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Major_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt"/>
+        <untitled-ontology-10:name>Sodium</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#strawberries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#strawberries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fruit"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_sugar rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:energy>53 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:name>Strawberry</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>flouride 7.3μg
+magnesium 21.6mg
+phosphorus 39.8mg
+sodium 1.7mg
+zinc 0.2mg
+copper 0.1mg
+potassium 254mg
+iron 0.7mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin C 97.6mg
+vitamin E 0.5mg
+vitamin K 3.7μg
+vitamin A 1.7μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>166g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sugar</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#swiss_cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#swiss_cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#dairy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <untitled-ontology-10:has_cholesterol rdf:resource="http://www.nutrifoods.com/#cholesterol"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy>112 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.7</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:name>Swiss cheese</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 252.8mg
+sodium 53.1mg
+potassium 20.4mg
+magnesium 9.4mg
+zinc 1.2mg
+selenium 8.5μg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofminerals>vitamin A 81.8μg
+vitamin B12 0.9μg
+Vitamin E 0.2mg</untitled-ontology-10:numberofminerals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fat_soluble"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitmain A</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B1</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B12</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B2</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B3</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B5</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B6</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B7"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B7</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B9</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water_soluble"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin C</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Vitamin_D"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin D</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin E</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamins"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin K</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#white_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#white_chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sugar"/>
+        <untitled-ontology-10:amountofcholesterol>17.9mg</untitled-ontology-10:amountofcholesterol>
+        <untitled-ontology-10:energy>458 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27.3</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofsugar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.2</untitled-ontology-10:gramofsugar>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.4</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White chocolate</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 169.2mg
+potassium 243.1mg
+sodium 76.5mg
+magnesium 10.2mg
+zinc 0.6mg
+phosphorus 149.6mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 7.7μg
+vitamin B12 0.5μg
+vitamin 0.8mg
+vitamin K 7.7μg
+vitamin B9 6μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>85g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#white_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#white_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#grains_and_pasta"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#copper"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fluoride"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#phosphorus"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#selenium"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:energy>205 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.5</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White rice</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 15.8mg,
+iron 1.9mg,
+potassium 55.3mg,
+magnesium 19mg
+phosphorus 67.9mg
+copper 0.1mg
+selenium 11.9μg
+flouride 64.9μg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:weight>158g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#yams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#yams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#roots"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vegetables"/>
+        <untitled-ontology-10:has_carbs rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#carbohydrate"/>
+        <untitled-ontology-10:has_fats rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fats"/>
+        <untitled-ontology-10:has_fiber rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#fiber"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#calcium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#iron"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#magnesium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#potassium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#sodium"/>
+        <untitled-ontology-10:has_minerals rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:has_protein rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#protein"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E"/>
+        <untitled-ontology-10:has_vitamins rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_K"/>
+        <untitled-ontology-10:has_water rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#water"/>
+        <untitled-ontology-10:energy>177 calories</untitled-ontology-10:energy>
+        <untitled-ontology-10:gramoffat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</untitled-ontology-10:gramoffat>
+        <untitled-ontology-10:gramoffiber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.2</untitled-ontology-10:gramoffiber>
+        <untitled-ontology-10:gramofprotein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</untitled-ontology-10:gramofprotein>
+        <untitled-ontology-10:gramofwater rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104.4</untitled-ontology-10:gramofwater>
+        <untitled-ontology-10:gramsofcarbs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.8</untitled-ontology-10:gramsofcarbs>
+        <untitled-ontology-10:name>Yam</untitled-ontology-10:name>
+        <untitled-ontology-10:numberofminerals>calcium 25.5mg,
+iron 0.8mg,
+potassium 1224mg,
+sodium 13.5mg,
+magnesium 31.5mg,
+zinc 04.mg</untitled-ontology-10:numberofminerals>
+        <untitled-ontology-10:numberofvitamin>vitamin A 10.5μg
+vitamin C 25.7mg
+vitamin E 0.5mg
+vitamin K 3.5μg
+vitamin B1 0.2mg
+vitamin B9 34.5μg</untitled-ontology-10:numberofvitamin>
+        <untitled-ontology-10:weight>150g</untitled-ontology-10:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#Minor_minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#minerals"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#zinc"/>
+        <untitled-ontology-10:name>Zinc</untitled-ontology-10:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#nutrients">
+        <rdfs:comment>this are the nutrients that are in food</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#salt">
+        <rdfs:comment xml:lang="en">Some food labels may only state the sodium content. Don&apos;t confuse salt and sodium figures.
+To convert sodium to salt, you need to multiply the sodium amount by 2.5. For example, 1g of sodium per 100g is 2.5 grams of salt per 100g.</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">Also known as sodium chloride</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_A">
+        <rdfs:seeAlso xml:lang="en">Also known as Retinoids</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B1">
+        <rdfs:seeAlso xml:lang="en">Also known as Thiamine</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B12">
+        <rdfs:seeAlso xml:lang="en">also known as Cobalamin</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B2">
+        <rdfs:seeAlso xml:lang="en">Also known as Riboflavin</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B3">
+        <rdfs:seeAlso xml:lang="en">Also known as Niacin</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B5">
+        <rdfs:seeAlso xml:lang="en">Also known as Pantothenic</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B6">
+        <rdfs:seeAlso xml:lang="en">Also known as Pyriodoxine</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B7">
+        <rdfs:seeAlso xml:lang="en">Also known as Biotin</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_B9">
+        <rdfs:seeAlso xml:lang="en">Also known as Folic acid (folate)</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_C">
+        <rdfs:seeAlso xml:lang="en">Also known as Ascorbic acid</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#vitamin_E">
+        <rdfs:seeAlso xml:lang="en">Also known as tocopherol</rdfs:seeAlso>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,136 @@
+SELECT  ?food ?Fname ?Fvitamins ?Fvom ?Fvim ?Fchol ?Fene ?weight ?water  
+WHERE {
+  ?food a gi:food.
+  ?food gi:name ?Fname.
+  ?food gi:has_vitamins ?Fvitamins.
+?food gi:numberofvitamin ?Fvom.
+?food gi:numberofminerals ?Fvim.
+ ?food gi:gramofwater ?water.
+  ?food gi:energy ?Fene.
+  ?food gi:numberofvitamin ?Fvom.
+  ?food gi:weight ?weight.
+  ?food gi:has_carbs ?carb.
+  
+}
+
+ORDER BY (?weight)
+LIMIT 30
+
+
+
+
+PREFIX gi: <http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#>
+PREFIX go: <http://purl.org/obo/owl/GO#>
+
+SELECT  ?food ?Fminerals ?name
+WHERE {
+  ?food a gi:food.
+  ?food gi:has_minerals ?FMinerals.
+  ?FMinerals gi:name ?name.
+  FILTER (REGEX(STR(?name),"Calcium"))
+  
+
+  
+}
+LIMIT 27
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix gi: <http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#>
+SELECT  ?food  ?Fname ?Fprotein ?Fpro ?Fcarbon ?Fcarb ?Ffat ?Ffats ?commentforcarb ?commentforprotein ?commentforfats
+where {  
+?food a gi:food.
+ ?food gi:name ?Fname.
+?food gi:has_protein ?Fprotein.
+ ?food gi:has_carbs ?Fcarbon.
+ ?food gi:has_fats ?Ffat.
+?food gi:gramsofcarbs ?Fcarb.
+?food gi:gramofprotein ?Fpro.
+?food gi:gramoffat ?Ffats.
+BIND(IF(?Fcarb>30.4,"HIGHCARB",".") AS ?commentforcarb)
+BIND(IF(?Fpro>1.4,"LOWPROTEIN",".") AS ?commentforprotein)
+BIND(IF(?Ffats>20.1,"HIGHINFAT",".") AS ?commentforfats)
+}
+ORDER BY ASC (?Fpro)
+OFFSET 1
+
+
+
+
+
+
+prefix gi: <http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#>
+
+SELECT   ?food  ?Fname ?Fnum ?fgin ?fam ?fsu ?nin
+WHERE {
+  ?food a gi:food.
+  ?food gi:name ?Fname.
+  ?food gi:numberofminerals ?Fnum.
+  ?food gi:has_vitamins ?fgin.
+  ?food gi:gramoffat ?fam.
+  ?food gi:gramofsugar ?fsu
+ 
+  
+  
+ {  
+  
+ 
+
+
+SELECT    ?food  ?Fname ?Fnum ?fgin ?fam ?fsu ?nin
+    WHERE {
+ 
+ 
+  ?food gi:gramofprotein ?nin
+
+}
+  
+    }
+    }
+  
+  
+  
+
+(COUNT(?Fcarbs) AS ?crabs)
+
+prefix gi: <http://www.semanticweb.org/kings/ontologies/2019/10/untitled-ontology-10#>
+
+SELECT   ?food  ?Fname ?Fnum ?fgin ?fam ?fsu ?nin ?fsi
+WHERE {
+  ?food a gi:food.
+  ?food gi:name ?Fname.
+  ?food gi:numberofminerals ?Fnum.
+  ?food gi:has_vitamins ?fgin.
+  ?food gi:gramoffat ?fam.
+ 
+  {  
+  
+ SELECT    ?food  ?Fname ?Fnum ?fgin ?fam ?fsu ?nin ?fsi
+    WHERE {
+ 
+ 
+  ?food gi:gramofprotein ?nin
+       OPTIONAL { ?food gi:gramofsugar ?fsu }
+      OPTIONAL { ?food gi:amountofcholesterol ?fsi }
+
+}
+  
+    }
+    }
+ 
+LIMIT 10
+
+   
+
+  
+
+
+
+
+
+
+
+
